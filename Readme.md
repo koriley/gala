@@ -1,3 +1,3 @@
 Gala:
 
-version a0.01
+version a0.02
