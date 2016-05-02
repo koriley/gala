@@ -21,9 +21,12 @@ class user {
      * @param $compName -> the company name
      */
 
-    function createLogin($dbcon, $email, $password, $firstName, $lastName, $compName) {
+    //function createLogin($dbcon, $email, $password, $firstName, $lastName, $compName) {
+    function createLogin($password) {
         $hash = self::passwordToHash($password);
+        $today = date("d.m.Y-H:i");
         
+        //return $hash;
     }
 
     /*

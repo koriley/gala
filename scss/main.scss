@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 29, 2016, 1:22:32 PM
+    Author     : koriley
+*/
+
+$mainColor : #453F78;
+$secondColor : #3F2E56;
+$thirdColor : #759AAB;
+$fourthColor : #401F3E;
+$fifthColor : #FAF2A1;
+$shadowBox :2px 2px 5px #000;
+
+body{
+    background:$mainColor; 
+    color:$fifthColor;
+} 
+
+.navbar{
+    background:$secondColor;
+    box-shadow: $shadowBox; 
+}
+
+.mother{
+    text-align: center;
+}
+
+.settingsView{
+    margin-top:25px;
+    width:100%;
+    min-height:450px;
+    background:$thirdColor;
+    box-shadow: $shadowBox;
+    margin-bottom:25px;
+
+}
+
+.nav-tabs{
+    background:$secondColor;
+    a{
+        color:$fifthColor;
+        
+    }
+    :hover{
+            color:#000 !important;
+        }
+
+}
+
