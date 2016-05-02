@@ -11,10 +11,17 @@ function __autoload($class_name) {
 }
 
 $password = "Str@nG31";
+$email = "kevin@blueshorestudios";
 $user = new user();
+$sanatize = new sanatize();
 
-$myHash = $user->passwordToHash($password);
+$myEmail = $sanatize->checkEmail($email);
+echo $myEmail."<br/><br/>";
+
+$create = $user->createLogin($password);
+echo "<br/>";
+/*$myHash = $user->passwordToHash($password);
 echo $myHash."<br/>";
-
-$hashCheck = $user->checkPassword($myHash, $password);
+*/
+$hashCheck = $user->checkPassword($create, $password);
 echo $hashCheck;
